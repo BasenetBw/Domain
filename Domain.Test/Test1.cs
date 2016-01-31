@@ -38,6 +38,12 @@ namespace Domain.Test
 
         }
 
-        
+        [Test]
+        public void TestOneAfterGitHubUpload()
+        {
+            var name = "john";
+            Assert.AreEqual("john", name);
+        }
+
     }
 }
