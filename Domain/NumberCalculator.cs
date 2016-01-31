@@ -25,5 +25,13 @@ namespace Domain
         }
 
         //  Didnt see my initial change
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <returns></returns>
+        public int MultiplyNumber()
+        {
+            return num1 * num2;
+        }
     }
 }

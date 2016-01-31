@@ -10,12 +10,27 @@ namespace Domain.Test
     [TestFixture]
     public class Test1
     {
+        NumberCalculator nc;
+        
+        [TestFixtureSetUp]
+        public void Init()
+        {
+            nc = new NumberCalculator(100, 100);
+        }
+
+        [TestFixtureTearDown]
+        public void Dispose()
+        {
+            nc = null;
+        }
+
         [Test]
         public void AddTwoNumber()
         {
-            var result = 2 + 3;
-            Assert.AreEqual(5, result);
+            
+            Assert.AreEqual(200, nc.AddNumber());
         }
+
 
         [Test]
         public void MultiplyTwoNumber()
