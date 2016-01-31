@@ -45,5 +45,12 @@ namespace Domain.Test
             Assert.AreEqual("john", name);
         }
 
+        [Test]
+        public void TestOneNumberEqualsAnother()
+        {
+            var number = 7;
+            Assert.AreEqual(7, number);
+        }
+
     }
 }
